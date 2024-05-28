@@ -20,7 +20,7 @@ node index.js
 const makeRequest = () => {
   setTimeout(() => {
     axios
-      .get(process.env.URL_STANDUP_SERV) //URL_STANDUP_SERV=http://127.0.0.1:5555/standup/webhook/ping
+      .get(process.env.URL_STANDUP_SERV) // http://127.0.0.1:8080/standup/webhook/pong
       .then((response) => {
         console.log("The adjacent answer is:", response.data);
       })
