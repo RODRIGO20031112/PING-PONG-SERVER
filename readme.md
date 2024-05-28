@@ -42,6 +42,12 @@ app.get("/standup/webhook/pong", (req, res) => {
 setInterval(makeRequest, 10000);
 ```
 
-# Isenção de responsabilidade, você pode fazer um fork deste repositório e implementá-lo no render ou em outro serviço gratuito, lembre-se que a conexão ficará reativando infinitamente, afim de que o servidor não entre em Stand By e você economize seus preciosos 7 dólares mensais...
+# Adicione o arquivo .env na raiz do projeto com o seguinte conteúdo:
+
+```
+URL_STANDUP_SERV=http://127.0.0.1:8080/standup/webhook/pong
+```
+
+Isenção de responsabilidade, você pode fazer um fork deste repositório e implementá-lo no render ou em outro serviço gratuito, lembre-se que a conexão ficará reativando infinitamente, afim de que o servidor não entre em Stand By e você economize seus preciosos 7 dólares mensais...
 
 https://github.com/RODRIGO20031112/PING-PONG-SERVER/assets/105398999/5dd50cd3-df24-4d83-95fe-b3a26b17de04
