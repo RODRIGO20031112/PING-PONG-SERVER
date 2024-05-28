@@ -21,9 +21,9 @@ const makeRequest = () => {
 
         setTimeout(() => {
           makeRequest();
-        }, 1000);
+        }, 30000);
       });
-  }, 1000);
+  }, 30000);
 };
 
 app.get("/standup/webhook/ping", (req, res) => {
@@ -31,7 +31,7 @@ app.get("/standup/webhook/ping", (req, res) => {
   res.send("TradeGPT says pong");
 });
 
-setInterval(makeRequest, 10000);
+setInterval(makeRequest, 30000);
 
 const PORT = process.env.PORT || 5555;
 app.listen(PORT, "0.0.0.0", () => {

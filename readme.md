@@ -29,9 +29,9 @@ const makeRequest = () => {
 
         setTimeout(() => {
           makeRequest();
-        }, 1000);
+        }, 30000);
       });
-  }, 1000);
+  }, 30000);
 };
 
 app.get("/standup/webhook/pong", (req, res) => {
@@ -39,7 +39,7 @@ app.get("/standup/webhook/pong", (req, res) => {
   res.send("Stand up server says ping");
 });
 
-setInterval(makeRequest, 10000);
+setInterval(makeRequest, 30000);
 ```
 
 # Adicione o arquivo .env na raiz do projeto com o seguinte conteúdo:
